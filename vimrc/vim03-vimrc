@@ -52,16 +52,16 @@ set autoread
 let mapleader = ","
 
 " reload .vimrc and source it
-map <silent> <Leader>ss :source $MYVIMRC<cr>
+map <silent> <Leader>ss :source $MYVIMRC<CR>
 
 " load .vimrc to current window
-map <silent> <Leader>ee :e $MYVIMRC<cr>
+map <silent> <Leader>ee :e $MYVIMRC<CR>
 
 " auto reload .vimrc once modified
 autocmd! bufwritepost $MYVIMRC source $MYVIMRC
 
-map <Leader>w :w<cr>
-map <Leader>q :q<cr>
+map <Leader>w :w<CR>
+map <Leader>q :q<CR>
 map <Leader>z ZZ
 
 " Shortcuts for buffers
