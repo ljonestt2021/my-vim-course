@@ -51,9 +51,14 @@ set autoread
 " ======================== Mapping ========================
 let mapleader = ","
 
-map <silent> <Leader>ss :source $HOME/$VIMCONF<cr>
-map <silent> <Leader>ee :e $HOME/$VIMCONF<cr>
-autocmd! bufwritepost $VIMCONF source $HOME/$VIMCONF
+" reload .vimrc and source it
+map <silent> <Leader>ss :source $MYVIMRC<cr>
+
+" load .vimrc to current window
+map <silent> <Leader>ee :e $MYVIMRC<cr>
+
+" auto reload .vimrc once modified
+autocmd! bufwritepost $MYVIMRC source $MYVIMRC
 
 map <Leader>w :w<cr>
 map <Leader>q :q<cr>
